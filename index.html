@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>测试版</title>
+<style>
+  :root { --fg: #1d1d1f; --bg: #fff; --sub: #6e6e73; --card: #f5f5f7; --link: #0066cc; --btn: #0071e3; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #f5f5f7; --bg: #000; --sub: #a1a1a6; --card: #1c1c1e; --link: #4aa3ff; --btn: #0a84ff; } }
+  @media (prefers-contrast: more) { :root { --sub: var(--fg); } }
+  body { font: 17px/1.6 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; max-width: 40rem; margin: 2.5rem auto; padding: 0 1rem; color: var(--fg); background: var(--bg); }
+  a { color: var(--link); }
+  h1 { font-size: 2rem; margin-bottom: .5rem; }
+  .sub { color: var(--sub); }
+  ul.apps { list-style: none; padding: 0; }
+  ul.apps li { margin: .75rem 0; }
+  ul.apps a { display: flex; gap: 1rem; align-items: center; padding: .75rem; border-radius: .9rem; background: var(--card); text-decoration: none; color: var(--fg); }
+  img.icon { width: 60px; height: 60px; border-radius: 22%; flex: none; }
+  img.big { width: 120px; height: 120px; border-radius: 22%; }
+  .install { display: block; text-align: center; padding: .8rem 1.2rem; margin: 1.25rem 0 .5rem; border-radius: .8rem; background: var(--btn); color: #fff; text-decoration: none; font-weight: 600; }
+  @media (min-width: 40rem) { .install { display: inline-block; } }
+</style>
+</head>
+<body>
+<main>
+<h1>测试版</h1>
+<p class="sub">需要 iOS 17 或更新版本；只有登记过设备的 iPhone 能安装；请用 Safari 打开。</p>
+<ul class="apps"><li><a href="apps/com.mingkong.MyriadPlayer/" aria-label="万籁，1.1，构建 102，10 月 21 日 09:25 打包"><img class="icon" src="apps/com.mingkong.MyriadPlayer/icon.png" alt=""><span>万籁，1.1，构建 102，10 月 21 日 09:25 打包</span></a></li></ul>
+</main>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>万籁 测试版</title>
+<style>
+  :root { --fg: #1d1d1f; --bg: #fff; --sub: #6e6e73; --card: #f5f5f7; --link: #0066cc; --btn: #0071e3; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #f5f5f7; --bg: #000; --sub: #a1a1a6; --card: #1c1c1e; --link: #4aa3ff; --btn: #0a84ff; } }
+  @media (prefers-contrast: more) { :root { --sub: var(--fg); } }
+  body { font: 17px/1.6 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; max-width: 40rem; margin: 2.5rem auto; padding: 0 1rem; color: var(--fg); background: var(--bg); }
+  a { color: var(--link); }
+  h1 { font-size: 2rem; margin-bottom: .5rem; }
+  .sub { color: var(--sub); }
+  ul.apps { list-style: none; padding: 0; }
+  ul.apps li { margin: .75rem 0; }
+  ul.apps a { display: flex; gap: 1rem; align-items: center; padding: .75rem; border-radius: .9rem; background: var(--card); text-decoration: none; color: var(--fg); }
+  img.icon { width: 60px; height: 60px; border-radius: 22%; flex: none; }
+  img.big { width: 120px; height: 120px; border-radius: 22%; }
+  .install { display: block; text-align: center; padding: .8rem 1.2rem; margin: 1.25rem 0 .5rem; border-radius: .8rem; background: var(--btn); color: #fff; text-decoration: none; font-weight: 600; }
+  @media (min-width: 40rem) { .install { display: inline-block; } }
+</style>
+</head>
+<body>
+<main>
+<h1>万籁</h1>
+<p><img class="big" src="icon.png" alt="万籁 图标"></p>
+<p>版本 1.1，构建 102，10 月 21 日 09:25 打包</p>
+<a class="install" href="itms-services://?action=download-manifest&amp;url=https://baibaixiaoming.github.io/test/apps/com.mingkong.MyriadPlayer/manifest.plist">安装 万籁</a>
+<p class="sub"><a href="#help">安装没反应？</a></p>
+<h2>这一版改了什么</h2><ul><li>放普通歌时不再要小缓冲，修手机喇叭外放时旁白噼啪</li><li>服务器电台列表每行带“直连”或“转发”</li></ul>
+<h2 id="help">安装没反应？</h2>
+<ul>
+<li>请用 Safari 打开本页，别的浏览器装不了。</li>
+<li>只有登记过设备的 iPhone 能安装。设备是刚登记的，要等下一次出的新版。</li>
+<li>点了“安装”后回到主屏幕，图标会显示安装进度。</li>
+<li>第一次打开如果提示“未受信任的开发者”，到“设置 → 通用 → VPN 与设备管理”里信任一次；系统要求时到“设置 → 隐私与安全性”打开“开发者模式”。</li>
+</ul>
+<p><a href="../../">返回全部测试版</a></p>
+</main>
+</body>
+</html>
